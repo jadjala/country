@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
 p {
     font-size: 17px;
     margin-bottom: 15px;
-}
+}x
 
 a {
     text-decoration: none;
@@ -34,7 +34,7 @@ a {
     transition: all 0.3s ease;
 }
 
-header {
+.header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/scenic.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
@@ -46,20 +46,19 @@ header {
     padding: 0 20px;
 }
 
-header h1 {
+.header h1 {
     font-size: 3.5rem;
     color: white;
     margin-bottom: 10px;
 }
 
-header p {
+.header p {
     font-size: 1.5rem;
     color: white;
 }
 
 .city-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/seoul.jpeg') no-repeat center center/cover;
-}
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/seoul.jpeg') no-repeat center center/cover;}
 
 .jeju-header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/images/jeju1.jpg') no-repeat center center/cover;
@@ -126,6 +125,7 @@ nav a.active {
     padding: 0 20px;
 }
 
+
 .hero h2 {
     font-size: 2.5rem;
     color: white;
@@ -136,12 +136,11 @@ nav a.active {
     text-align: center;
 }
 
-section {
+.city-post, .city-feature, .jeju-feature {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
-    justify-content: center;
     padding: 50px 0;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -154,15 +153,39 @@ section {
     direction: ltr;
 }
 
-section img {
+.city-image img, .jeju-image img {
     width: 100%;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-section img:hover {
+.city-image img:hover, .jeju-image img:hover {
     transform: scale(1.02);
+}
+
+.city-tips, .jeju-tips {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.tip-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
 }
 
 .gallery {
@@ -184,18 +207,22 @@ section img:hover {
     transform: scale(1.03);
 }
 
+.jeju-intro {
+    text-align: center;
+}
+
+.jeju-intro img {
+    margin: 30px 0;
+    max-height: 500px;
+    border-radius : 100px;
+}
+
 footer {
-    background-color: #3c3c3c;
-    color: white;
+    background-color: #09b5ff68;
+    color: rgb(7, 0, 0);
     text-align: center;
     padding: 30px 0;
     margin-top: 50px;
-}
-
-footer a{
-    color: #ff6347;
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .read-more {
@@ -208,3 +235,4 @@ footer a{
 .read-more:hover {
     text-decoration: underline;
 }
+

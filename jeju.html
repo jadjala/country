@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>
-        SOOOON
-    </p>
+   <header class = "header jeju-header">
+    <h1>Jeju's Natural Wonders</h1>
+    <p>Korea's Heavenly Paradise</p>
+   </header>
+
+   <nav>
+    <div class = "container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">City Life</a></li>
+            <li><a href="jeju.html" class = "active">Jeju Island</a></li>
+        </ul>
+    </div>
+   </nav>
+
+   <main class = "container">
+        <section class = "intro">
+            <h2>The Island of the Gods</h2>
+            <p>Formed by volcanic eruptions over 2 million years ago, Jeju Island is Korea's premier natural escape. Designated a UNESCO World Natural Heritage site, its dramatic landscapes range from lava tubes to subtropical forests.</p>
+        </section>
+
+        <section class = "jeju-feature">
+            <div>
+                <h3>Hallasan: Korea's Tallest Peak</h3>
+                <p>The dormant volcano at Jeju's center offers hikes through ecosystems that change with every kilometer of elevation. The 7-hour round trip to the summit passes through alpine forests and volcanic craters.</p>
+                <p>For a gentler experience, explore the Eorimok or Yeongsil trails that showcase Hallasan's breathtaking valleys.</p>
+            </div>
+            <div class = "jeju-image">
+                <img src="/images/hallasan.png" alt="Hallasan mountain">
+            </div>
+            </section>
+
+        <section class = "jeju-feature reverse">
+            <div class="jeju-text">
+                <h3>Seongsan Ilchulbong Sunrise Peak</h3>
+                <p>This dramatic tuff cone rising from the sea is Jeju's most iconic landmark. The 30-minute hike to the crater rim rewards early risers with spectacular sunrise views over the Pacific.</p>
+                <p>Nearby, the women divers (haenyeo) of Jeju demonstrate their traditional free-diving techniques, a UNESCO Intangible Cultural Heritage.</p>
+            </div>
+            <div class="jeju-image">
+                <img src="images/songran.jpg" alt="Sunrise Peak">
+            </div>
+            </section>
+
+        <section class = "jeju-tips">
+            <h3>Island Explorer's Guide</h3>
+            <div class = "tips-grid">
+                <div class = "tip-card">
+                    <h4>When to Visit</h4>
+                    <p>April for cherry blossoms, June for hydrangeas, September for mild weather and harvest festivals.</p>
+                </div>
+                <div class = "tip-card">
+                    <h4>Getting Around</h4>
+                    <p>Rent a car for the best access to remote areas. Public buses are available but less convenient.</p>     
+                </div>
+                <div class = "tip-card">
+                    <h4>Local Flavors</h4>
+                    <p>Try black pork BBQ, fresh abalone, and hallabong oranges - Jeju's signature citrus fruit.</p>
+            </div>
+            </section>
+
+
+        <div class = "gallery">
+            <img src="images/trav.jpg" alt="Jeju coastline">
+            <img src="images/trov.jpeg" alt="Lava tubes">
+            <img src="images/lala.webp" alt="Jeju fields">
+        </div>
+
+   </main>
+
+   <footer>
+    <div class = "container">
+        <p>&copy; 2025 Skyline to Shoreline | Judd's Blog</p>
+    </div>
+   </footer>
+
 </body>
 </html>
