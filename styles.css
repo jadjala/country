@@ -28,6 +28,7 @@ p {
     margin-bottom: 15px;
 }x
 
+
 a {
     text-decoration: none;
     color: #333;
@@ -94,43 +95,6 @@ nav a.active {
     font-weight: bold;
 }
 
-.hero {
-    position: relative;
-    height: 500px;
-    margin: 30px 0;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 0 20px;
-}
-
-
-.hero h2 {
-    font-size: 2.5rem;
-    color: white;
-}
-
 .intro {
     padding: 50px 0;
     text-align: center;
@@ -145,14 +109,6 @@ nav a.active {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.reverse {
-    direction: rtl;
-}
-
-.reverse > * {
-    direction: ltr;
-}
-
 .city-image img, .jeju-image img {
     width: 100%;
     border-radius: 8px;
@@ -160,9 +116,6 @@ nav a.active {
     transition: transform 0.3s ease;
 }
 
-.city-image img:hover, .jeju-image img:hover {
-    transform: scale(1.02);
-}
 
 .city-tips, .jeju-tips {
     padding: 50px 0;
